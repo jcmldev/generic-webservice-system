@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://backup.dd/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://backup.dd/">
+
+<xs:element name="DKL_getAntecedentServicesOfDependentIp" type="tns:DKL_getAntecedentServicesOfDependentIp"/>
+
+<xs:element name="DKL_getAntecedentServicesOfDependentIpResponse" type="tns:DKL_getAntecedentServicesOfDependentIpResponse"/>
+
+<xs:element name="DKL_storeIpDependence" type="tns:DKL_storeIpDependence"/>
+
+<xs:element name="DKL_storeIpDependenceResponse" type="tns:DKL_storeIpDependenceResponse"/>
+
+<xs:element name="GP_Multihop_getBackupData" type="tns:GP_Multihop_getBackupData"/>
+
+<xs:element name="GP_Multihop_getBackupDataResponse" type="tns:GP_Multihop_getBackupDataResponse"/>
+
+<xs:element name="GP_Multihop_getInterDependenciesForTimeWindow" type="tns:GP_Multihop_getInterDependenciesForTimeWindow"/>
+
+<xs:element name="GP_Multihop_getInterDependenciesForTimeWindowResponse" type="tns:GP_Multihop_getInterDependenciesForTimeWindowResponse"/>
+
+<xs:element name="GP_Multihop_storeBackupData" type="tns:GP_Multihop_storeBackupData"/>
+
+<xs:element name="GP_Multihop_storeBackupDataResponse" type="tns:GP_Multihop_storeBackupDataResponse"/>
+
+<xs:element name="GP_addMetadata" type="tns:GP_addMetadata"/>
+
+<xs:element name="GP_addMetadataResponse" type="tns:GP_addMetadataResponse"/>
+
+<xs:element name="GP_addTargetOfNode" type="tns:GP_addTargetOfNode"/>
+
+<xs:element name="GP_addTargetOfNodeResponse" type="tns:GP_addTargetOfNodeResponse"/>
+
+<xs:element name="GP_getBackupData" type="tns:GP_getBackupData"/>
+
+<xs:element name="GP_getBackupDataResponse" type="tns:GP_getBackupDataResponse"/>
+
+<xs:element name="GP_getBackupTargetsOfNode" type="tns:GP_getBackupTargetsOfNode"/>
+
+<xs:element name="GP_getBackupTargetsOfNodeResponse" type="tns:GP_getBackupTargetsOfNodeResponse"/>
+
+<xs:element name="GP_getDependentHosts" type="tns:GP_getDependentHosts"/>
+
+<xs:element name="GP_getDependentHostsResponse" type="tns:GP_getDependentHostsResponse"/>
+
+<xs:element name="GP_getInterDependenciesForTimeWindow" type="tns:GP_getInterDependenciesForTimeWindow"/>
+
+<xs:element name="GP_getInterDependenciesForTimeWindowResponse" type="tns:GP_getInterDependenciesForTimeWindowResponse"/>
+
+<xs:element name="GP_getMetadata" type="tns:GP_getMetadata"/>
+
+<xs:element name="GP_getMetadataResponse" type="tns:GP_getMetadataResponse"/>
+
+<xs:element name="GP_storeBackupData" type="tns:GP_storeBackupData"/>
+
+<xs:element name="GP_storeBackupDataResponse" type="tns:GP_storeBackupDataResponse"/>
+
+<xs:complexType name="GP_getMetadata">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GP_getMetadataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DKL_getAntecedentServicesOfDependentIp">
+<xs:sequence>
+<xs:element name="dependentIp" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DKL_getAntecedentServicesOfDependentIpResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_getInterDependenciesForTimeWindow">
+<xs:sequence>
+<xs:element name="nodeId" type="xs:string" minOccurs="0"/>
+<xs:element name="serviceId" type="xs:string" minOccurs="0"/>
+<xs:element name="fromTimestamp" type="xs:long"/>
+<xs:element name="toTimestamp" type="xs:long"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_getInterDependenciesForTimeWindowResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_getDependentHosts">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GP_getDependentHostsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_Multihop_storeBackupData">
+<xs:sequence>
+<xs:element name="backupData" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_Multihop_storeBackupDataResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GP_getBackupTargetsOfNode">
+<xs:sequence>
+<xs:element name="nodeId" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_getBackupTargetsOfNodeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_storeBackupData">
+<xs:sequence>
+<xs:element name="nodeId" type="xs:string" minOccurs="0"/>
+<xs:element name="fromTimestamp" type="xs:long"/>
+<xs:element name="toTimestamp" type="xs:long"/>
+<xs:element name="timeSlotSize" type="xs:int"/>
+<xs:element name="backupData" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_storeBackupDataResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GP_Multihop_getBackupData">
+<xs:sequence>
+<xs:element name="lastSuccessfulyTransferedBackupData" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_Multihop_getBackupDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_Multihop_getInterDependenciesForTimeWindow">
+<xs:sequence>
+<xs:element name="dependentServiceId" type="xs:string" minOccurs="0"/>
+<xs:element name="fromTimestamp" type="xs:long"/>
+<xs:element name="toTimestamp" type="xs:long"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_Multihop_getInterDependenciesForTimeWindowResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DKL_storeIpDependence">
+<xs:sequence>
+<xs:element name="dependentIp" type="xs:string" minOccurs="0"/>
+<xs:element name="antecedentService" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DKL_storeIpDependenceResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GP_getBackupData">
+<xs:sequence>
+<xs:element name="fromTimestamp" type="xs:long"/>
+<xs:element name="toTimestamp" type="xs:long"/>
+<xs:element name="timeSlotSize" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_getBackupDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_addTargetOfNode">
+<xs:sequence>
+<xs:element name="nodeId" type="xs:string" minOccurs="0"/>
+<xs:element name="targetId" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_addTargetOfNodeResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GP_addMetadata">
+<xs:sequence>
+<xs:element name="metadataRecords" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GP_addMetadataResponse">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>

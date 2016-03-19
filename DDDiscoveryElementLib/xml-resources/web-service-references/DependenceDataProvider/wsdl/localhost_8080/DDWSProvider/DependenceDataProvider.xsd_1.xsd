@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.2.0-1 (tags/2.2.0u1-7139; 2012-06-02T10:55:19+0000) JAXWS-RI/2.2.6-2 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws.dd/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.dd/">
+
+<xs:element name="getInterDependenciesForTimeWindow" type="tns:getInterDependenciesForTimeWindow"/>
+
+<xs:element name="getInterDependenciesForTimeWindowResponse" type="tns:getInterDependenciesForTimeWindowResponse"/>
+
+<xs:element name="getInterDependenciesForTimeWindow_Distributed" type="tns:getInterDependenciesForTimeWindow_Distributed"/>
+
+<xs:element name="getInterDependenciesForTimeWindow_DistributedResponse" type="tns:getInterDependenciesForTimeWindow_DistributedResponse"/>
+
+<xs:complexType name="getInterDependenciesForTimeWindow">
+<xs:sequence>
+<xs:element name="conversationId" type="xs:int"/>
+<xs:element name="serviceId" type="xs:string" minOccurs="0"/>
+<xs:element name="fromTimestamp" type="xs:long"/>
+<xs:element name="toTimestamp" type="xs:long"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInterDependenciesForTimeWindowResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInterDependenciesForTimeWindow_Distributed">
+<xs:sequence>
+<xs:element name="conversationId" type="xs:int"/>
+<xs:element name="serviceId" type="xs:string" minOccurs="0"/>
+<xs:element name="fromTimestamp" type="xs:long"/>
+<xs:element name="toTimestamp" type="xs:long"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInterDependenciesForTimeWindow_DistributedResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

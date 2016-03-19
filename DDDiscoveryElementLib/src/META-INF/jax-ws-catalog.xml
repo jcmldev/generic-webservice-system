@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/DDWSProvider/GpAndDklService?wsdl" uri="wsdl/localhost_8080/DDWSProvider/GpAndDklService.wsdl"/>
+    <system systemId="http://localhost:8080/DDWSProvider/GpAndDklService?xsd=1" uri="wsdl/localhost_8080/DDWSProvider/GpAndDklService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/DDWSProvider/DependenceDataProvider?wsdl" uri="wsdl/localhost_8080/DDWSProvider/DependenceDataProvider.wsdl"/>
+    <system systemId="http://localhost:8080/DDWSProvider/DependenceDataProvider?xsd=1" uri="wsdl/localhost_8080/DDWSProvider/DependenceDataProvider.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/DDWSProvider/DiscoveryElementService?wsdl" uri="wsdl/localhost_8080/DDWSProvider/DiscoveryElementService.wsdl"/>
+    <system systemId="http://localhost:8080/DDWSProvider/DiscoveryElementService?xsd=1" uri="wsdl/localhost_8080/DDWSProvider/DiscoveryElementService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/DDWSProvider/Backup?wsdl" uri="wsdl/localhost_8080/DDWSProvider/Backup.wsdl"/>
+    <system systemId="http://localhost:8080/DDWSProvider/Backup?xsd=1" uri="wsdl/localhost_8080/DDWSProvider/Backup.xsd_1.xsd"/>
+</catalog>

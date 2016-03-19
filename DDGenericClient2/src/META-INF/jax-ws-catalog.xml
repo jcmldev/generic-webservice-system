@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/DDGenericWS/GWS?wsdl" uri="wsdl/localhost_8080/DDGenericWS/GWS.wsdl"/>
+    <system systemId="http://localhost:8080/DDGenericWS/GWS?xsd=1" uri="wsdl/localhost_8080/DDGenericWS/GWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/DDGossipWS/GossipProtocolService?wsdl" uri="xml-resources/web-service-references/GossipProtocolService/wsdl/localhost_8080/DDGossipWS/GossipProtocolService.wsdl"/>
+    <system systemId="http://localhost:8080/DDGossipWS/GossipProtocolService?xsd=1" uri="xml-resources/web-service-references/GossipProtocolService/wsdl/localhost_8080/DDGossipWS/GossipProtocolService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/DDWSProvider/DependenceDataProvider?wsdl" uri="wsdl/localhost_8080/DDWSProvider/DependenceDataProvider.wsdl"/>
+    <system systemId="http://localhost:8080/DDWSProvider/DependenceDataProvider?xsd=1" uri="wsdl/localhost_8080/DDWSProvider/DependenceDataProvider.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/DDWSProvider/DiscoveryElementService?wsdl" uri="wsdl/localhost_8080/DDWSProvider/DiscoveryElementService.wsdl"/>
+    <system systemId="http://localhost:8080/DDWSProvider/DiscoveryElementService?xsd=1" uri="wsdl/localhost_8080/DDWSProvider/DiscoveryElementService.xsd_1.xsd"/>
+</catalog>

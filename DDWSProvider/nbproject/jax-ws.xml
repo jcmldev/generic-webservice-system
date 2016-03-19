@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="DependenceDataProvider">
+      <implementation-class>dd.ws.DependenceDataProvider</implementation-class>
+    </service>
+    <service name="DiscoveryElementService">
+      <implementation-class>dd.ws.DiscoveryElementService</implementation-class>
+    </service>
+    <service name="Backup">
+      <implementation-class>dd.Backup</implementation-class>
+    </service>
+  </services>
+  <clients>
+  </clients>
+</jax-ws>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-DependenceDataProvider" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DependenceDataProvider"/>
+        <property name="wsdl-DependenceDataProvider" location="xml-resources/web-service-references/DependenceDataProvider/wsdl/localhost_8080/DDWSProvider/DependenceDataProvider.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DependenceDataProvider" destdir="${build.generated.dir}/jax-wsCache/DependenceDataProvider" wsdl="${wsdl-DependenceDataProvider}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8080/DDWSProvider/DependenceDataProvider?wsdl" xnocompile="true" xendorsed="true" package="dd.ddpwrapper">
+            <depends file="${wsdl-DependenceDataProvider}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DependenceDataProvider"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DependenceDataProvider">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DependenceDataProvider" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DependenceDataProvider"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/dd/ddpwrapper"/>
+    </target>
+    <target name="wsimport-client-DiscoveryElementService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DiscoveryElementService"/>
+        <property name="wsdl-DiscoveryElementService" location="xml-resources/web-service-references/DiscoveryElementService/wsdl/localhost_8080/DDWSProvider/DiscoveryElementService.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DiscoveryElementService" destdir="${build.generated.dir}/jax-wsCache/DiscoveryElementService" wsdl="${wsdl-DiscoveryElementService}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8080/DDWSProvider/DiscoveryElementService?wsdl" xnocompile="true" xendorsed="true" package="dd.desWrapper">
+            <depends file="${wsdl-DiscoveryElementService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DiscoveryElementService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DiscoveryElementService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DiscoveryElementService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DiscoveryElementService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/dd/desWrapper"/>
+    </target>
+    <target name="wsimport-client-Backup" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Backup"/>
+        <property name="wsdl-Backup" location="xml-resources/web-service-references/Backup/wsdl/localhost_8080/DDWSProvider/Backup.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Backup" destdir="${build.generated.dir}/jax-wsCache/Backup" wsdl="${wsdl-Backup}" catalog="catalog.xml" extension="true" verbose="true" wsdlLocation="http://localhost:8080/DDWSProvider/Backup?wsdl" xnocompile="true" xendorsed="true" package="dd.bck">
+            <depends file="${wsdl-Backup}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Backup"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Backup">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Backup" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Backup"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/dd/bck"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-DependenceDataProvider, wsimport-client-DiscoveryElementService, wsimport-client-Backup"/>
+</project>

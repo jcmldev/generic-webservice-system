@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/DDGossipWS/GossipProtocolService?wsdl" uri="xml-resources/web-service-references/GossipProtocolService/wsdl/localhost_8080/DDGossipWS/GossipProtocolService.wsdl"/>
+    <system systemId="http://localhost:8080/DDGossipWS/GossipProtocolService?xsd=1" uri="xml-resources/web-service-references/GossipProtocolService/wsdl/localhost_8080/DDGossipWS/GossipProtocolService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/DDWSProvider/GpAndDklService?wsdl" uri="xml-resources/web-service-references/GpAndDklService/wsdl/localhost_8080/DDWSProvider/GpAndDklService.wsdl"/>
+    <system systemId="http://localhost:8080/DDWSProvider/GpAndDklService?xsd=1" uri="xml-resources/web-service-references/GpAndDklService/wsdl/localhost_8080/DDWSProvider/GpAndDklService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/DDWSProvider/Backup?wsdl" uri="xml-resources/web-service-references/Backup/wsdl/localhost_8080/DDWSProvider/Backup.wsdl"/>
+    <system systemId="http://localhost:8080/DDWSProvider/Backup?xsd=1" uri="xml-resources/web-service-references/Backup/wsdl/localhost_8080/DDWSProvider/Backup.xsd_1.xsd"/>
+</catalog>
